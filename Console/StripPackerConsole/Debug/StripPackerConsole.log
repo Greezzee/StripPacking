@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\zorin\source\repos\StripPacking\Console\StripPackerConsole\main.cpp(12,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\zorin\source\repos\StripPacking\Console\StripPackerConsole\main.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
+  StripPackerConsole.vcxproj -> C:\Users\zorin\source\repos\StripPacking\Console\StripPackerConsole\Debug\StripPackerConsole.exe
