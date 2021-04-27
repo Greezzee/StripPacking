@@ -77,8 +77,14 @@ float StripSolver::GetMinimunSolution(const std::list<strip_level_t>& strip, con
 	for (auto i = rects.begin(); i != rects.end(); i++) // ищем суммарную площадь прямоугольников
 		total_square += i->w * i->h;
 
-	for (auto i = strip.begin(); std::next(i) != strip.end(); i++) // для поиска идеализированного решения, представим прямоугольники "жидкостью" и "выльем" её на карту высот
-		total_square -= (std::next(i)->start_x - i->start_x) * i->h_level;
+	for (auto i = strip.begin(); i != strip.end(); i++) { // для поиска идеализированного решения, представим прямоугольники "жидкостью" и "выльем" её на карту высот
+		float start;
+		if (std::next(i) == strip.end())
+			start = STRIP_W;
+		else
+			start = std::next(i)->start_x;
+		total_square -= (start - i->start_x) * (max_h - i->h_level);
+	}
 
 	if (total_square < 0.f)
 		return max_h;
