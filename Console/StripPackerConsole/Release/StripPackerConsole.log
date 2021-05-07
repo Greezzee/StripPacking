@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\zorin\source\repos\StripPacking\Console\StripPackerConsole\main.cpp(42,20): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  195 of 394 functions (49.5%) were compiled, the rest were copied from previous compilation.
+    27 functions were new in current compilation
+    16 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  StripPackerConsole.vcxproj -> C:\Users\zorin\source\repos\StripPacking\Console\StripPackerConsole\Release\StripPackerConsole.exe
